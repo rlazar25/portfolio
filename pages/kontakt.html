@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3fd9448c9c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="../images/rl-logo.png" alt="Ovo je moj logo">
+        </div>  <!-- end logo-->
+
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="../index.html">Početna</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            
+        </nav>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </div><!--end container -->
+</header><!-- end header-->
+
+
+
+<main id="form">
+    <div class="container">
+
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message " rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="cvbtn">Submit</button>
+        </form>
+
+
+    </div>
+</main>
+
+
+<section class="contact">
+    <div class="container">
+
+    <div class="contactText">
+        <h1>Kontaktiraj me takodje:</h1>
+
+        <p><i class="fa-solid fa-envelope"></i> r.lazar2504@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 060123456</p>
+    </div>
+    <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <a href="../images/lazar-radosavljevic-portfolio.pdf" download class="cvbtn">Preuzmi CV</a>
+</div>
+</section>
+
+<div class="mapa">
+    <div class="container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44371.507174449456!2d20.29629657196431!3d44.30988590054576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4757567cdb16f367%3A0xd4b67fd164c21cfc!2sBrajkovac!5e1!3m2!1sbs!2srs!4v1668876356967!5m2!1sbs!2srs" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<footer>
+
+    <div class="container">
+        <p>
+            <span class="crvena"> Lazar Radosavljević</span> &copy; copyright
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+<script>
+
+    let sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+        sidemenu.style.right = '0'
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = '-200px'
+    }
+
+
+</script>
+
+</body>
+</html>

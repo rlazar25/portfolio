@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="../favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="../favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Početna</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3fd9448c9c.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="../images/rl-logo.png" alt="Ovo je moj logo">
+        </div>  
+
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="../index.html">Početna</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            
+        </nav>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </div>
+</header>
+
+<main class="portfolio">
+    
+        <h1>Portfolio</h1>
+      
+            <section class="oblast">  
+                <div class="container">
+                <h2>Photoshop</h2>
+                <div class="slike">
+                    <img src="../images/ps/naslovna-strana.jpg" alt="Naslovna strana klnjige">
+                    <img src="../images/ps/naslovna-strana-magazina.jpg" alt="">
+                </div>
+            </section>
+        </div>
+
+        <section class="oblast2">
+        <div class="container">
+            <h2>Illustrator</h2>
+            <div class="slike">
+                <img src="../images/ai/dod-draw.jpg" alt="Crtez psa nacrtan u adobe ai">
+                <img src="../images/ai/clipping-mask-ice-cream.jpg" alt="Sladoled nacrtan u adobe ai">
+                <img src="../images/ai/baby-giraffe.jpg" alt="Zirafa nacrtana u adobe ai">
+            </div>
+        </section>
+        </div>
+        
+        <section class="oblast">
+            <div class="container">
+            <h2>Dreamweaver</h2>
+            <div class="slike">
+                <img src="../images/dw/lazarevac.jpg" alt="Slika od sajta Lazarevca">
+                
+            </div>
+        </section>
+        </div>
+
+        <section class="oblast2">
+            <div class="container">
+            <h2>HTML&amp;CSS</h2>
+            <div class="slike">
+                <img src="../images/html&css/drone-web-sajt.jpg" alt="Slika od sajta Drone web">
+                <img src="../images/html&css/restoran-sajt.jpg" alt="Slika od sajta restoran-sajt">
+                </div>
+        </section>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+<footer>
+
+    <div class="container">
+        <p>
+            <span class="crvena"> Lazar Radosavljević</span> &copy; copyright
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+
+<script>
+
+    let sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+        sidemenu.style.right = '0'
+    }
+    
+    function closemenu(){
+        sidemenu.style.right = '-200px'
+    } 
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+body {
+    background: #191919;
+    font-family: 'Roboto', sans-serif;
+    color: #fefefe;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+header .logo {
+    width: 100px;
+    margin: 20px 10px;
+}
+nav {
+    background: #ff004f;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+nav ul li {
+    display: block;
+    list-style: none;
+    margin: 20px;
+}
+nav ul li a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #191919;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.fa-solid {
+    font-size: 25px;
+    cursor: pointer;
+}
+nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+nav ul li {
+    display: block;
+    margin-top: 25px; 
+}
+nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+}
+.fa-bars {
+    margin-top: 30px;
+}
+.oMeni h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #ff004f;
+margin: 20px 0 50px;
+}
+.oMeni h2 {
+    margin: 30px;
+    color: #ff004f;
+}
+.oMeni p{
+    text-align: justify;
+}
+.heroText {
+    padding: 20px;
+    border-radius: 30px;
+}
+.heroText p {
+    word-spacing: 1px;
+    font-size: 30px;
+    
+}
+.heroText p span.crvena{
+    font-size: 50px;
+}
+.heroText  span.manja-slova {
+    font-size: 10px;
+}
+.crvena {
+    letter-spacing: 0.04rem;
+    color: #ff004f;
+}
+footer{
+    background: #0d0d0d;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+.cvbtn {
+    background: #ff004f;
+    color: #fefefe;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+    padding: 17px 33px 15px;
+	margin:20px 0;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+#form {
+    width: 100%;
+}
+form input, form textarea {
+    width: 98%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 10px 0 10px 10px;
+    margin: 15px 0;
+    color: #fefefe;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.contactText h1, .contactText i {
+    color: #ff004f;
+}
+.contactText h1 {
+    margin: 30px 20px;
+}
+.contactText p {
+    letter-spacing: 1px;
+    margin: 20px 0;
+}
+.social a {
+    text-decoration: none;
+    font-size: 30px;
+    margin: 0 15px 20px 0;
+    color: #ababab;
+    display: inline-block;
+    
+}
+.social a:hover {
+    color: #ff004f;
+    transform: translateY(-5px);
+    transition: 0.4s;
+}
+.mapa .container {
+    height: 300px;
+} 
+.portfolio {
+    color: #ff004f;
+}
+.portfolio h1 {
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 2px;
+    font-size: 40px;
+
+}
+.oblast{
+    margin: 20px 0;
+    background: #393939;
+    padding: 20px;
+}
+.oblast2 {
+    margin: 20px 0;
+    background: none;
+    padding: 20px;
+    border-radius: 30px;
+
+}
+.portfolio h2 {
+    letter-spacing: 1px;
+    
+    margin: 50px 0 20px;
+}
+.oblast .slike .img{
+    padding: 20px 0;
+
+}
+.socials h2 {
+    color: #ff004f;
+    margin: 20px 0;
+}
+.container2 {
+    width: 100%;
+}
+.oblast .container, .oblast2 .container {
+    text-align: center;
+}
+
+/* responsive */
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 700px;
+    }
+    header .logo {
+        width: 150px;
+    }
+
+    
+
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .container {
+        width: 960px;
+    }
+    header .logo {
+        width: 200px;
+    }
+    .fa-solid{
+        font-size: 35px;
+    }
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero img {
+        width: 600px;
+    }
+    .heroText {
+        margin-top: 200px;
+    }
+    .oblast .slike{
+        width:960px ;        
+        display: inline-block;
+    }
+    .slike img {
+        width: 300px;
+    }
+    #form .container form{
+        margin-top: 100px;
+        width: 600px;
+    }
+    .mapa .container iframe{
+        width: 600px;
+    }
+    
+}
+
+
+
+@media screen and (min-width: 1281px) {
+    .container {
+        width: 1200px;
+    }
+    header .logo {
+        width: 200px;
+    }
+    .fa-solid{
+        font-size: 35px;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hero img {
+        width: 700px;
+    }
+    .heroText {
+        margin-top: 200px;
+        padding: 30px;
+    }
+    .oblast .slike{
+        width:960px ;        
+        display: inline-block;
+    }
+    .slike img {
+        width: 350px;
+    }
+    #form .container form{
+        margin-top: 100px;
+        width: 700px;
+    }
+    .mapa .container iframe{
+        width: 800px;
+    }
+    .wrapper {
+        display: flex;justify-content: space-between;
+    }
+    .wrapper img {
+        width: 600px;
+    }
+    
+    
+}
